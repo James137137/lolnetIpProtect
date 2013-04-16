@@ -1,0 +1,59 @@
+name: LolnetIpProtect
+main: com.james137137.LolnetIpProtect.LolnetIpProtect
+version: 0.42
+authors: [James Anderson]
+commands:
+  lolnetIP:
+    description: lolnetIP Protect
+    usage:
+      
+permissions:
+  LolnetIpProtect.*:
+    description: Gives access to all FactionChat commands
+    children:
+      LolnetIpProtect.Warn: true
+      LolnetIpProtect.add.Other:: true
+      LolnetIpProtect.remove.Other: true
+      LolnetIpProtect.list.Other: true
+  LolnetIpProtect.Warn:
+    description: Allows player to see message when a user has the incorrect IP and is on Warn Mode
+    default: op
+  LolnetIpProtect.add.:
+    children:
+      LolnetIpProtect.add.other: true
+  LolnetIpProtect.add.*:
+    children:
+      LolnetIpProtect.add.other: true
+  LolnetIpProtect.remove.:
+    children:
+      LolnetIpProtect.remove.other: true
+  LolnetIpProtect.list.*:
+    children:
+      LolnetIpProtect.remove.other: true
+  LolnetIpProtect.list.:
+    children:
+      LolnetIpProtect.list.other: true
+  LolnetIpProtect.list.*:
+    children:
+      LolnetIpProtect.list.other: true
+  LolnetIpProtect.add.Self:
+    description: Allows player add IPs to its own account
+    default: op
+  LolnetIpProtect.remove.Self:
+    description: Allows player remove IPs to its own account
+    default: op
+  LolnetIpProtect.list.Self:
+    description: Allows player list IPs to its own account
+    default: op
+  LolnetIpProtect.add.Other:
+    description: Allows player add IPs to any account
+    default: op
+  LolnetIpProtect.remove.Other:
+    description: Allows player remove IPs to any account
+    default: op
+  LolnetIpProtect.list.Other:
+    description: Allows player list IPs to any account
+    default: op
+  LolnetIpProtect.list.Other:
+    description: Allows player list IPs to any account
+    default: op
