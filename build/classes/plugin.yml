@@ -1,6 +1,6 @@
 name: LolnetIpProtect
 main: com.james137137.LolnetIpProtect.LolnetIpProtect
-version: 0.43
+version: 0.5
 authors: [James Anderson]
 commands:
   lolnetIP:
